@@ -14,13 +14,14 @@
 			<h1>Trackgenix SA </h1>
 		</header>
     <section><!--SideBar-->
-      <nav class="menu">
+      <aside class="menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">SignUp</a></li>
           <li><a href="#">Login</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+			</aside>
     </section>
     <hr>  
 		<section> <!--Primera Seccion: Descripcion de pagina-->
@@ -83,10 +84,14 @@
 					<label>E-mail:<input type="Placeholder" placeholder="pedro_rodriguez@example"></label>
 				</div>
 				<div>
+					<input list="area" name="myName">
+					<datalist id="area">
+						<option value="Development"></option>
+						<option value="QA"></option>
+						<option value="Sales"></option>
+						<option value="Marketing"></option>
+					</datalist>
 					<label>Contact area:<input type="Option" placeholder="Type here"></label>
-				</div>
-				<div>
-					<label>Text area:<input type="Placeholder" placeholder="Type here"></label>
 				</div>
 				<div>
 					<input type="submit" value="SEND MESSAGE">
