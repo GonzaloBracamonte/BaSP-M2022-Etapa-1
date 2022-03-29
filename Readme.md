@@ -1,3 +1,3 @@
 # Become a Software Professional
 ## Week 2
-Proyecto realizado por Bracamonte Gonzalo
+Project made by Bracamonte Gonzalo
