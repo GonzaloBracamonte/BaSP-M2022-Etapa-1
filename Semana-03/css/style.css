@@ -1,0 +1,20 @@
+h1{
+  color: #373867;
+  background-color: #46A37C;
+  /*font: Roboto;*/
+}
+h2{
+  color: #46A37C;
+}
+h3{
+  color: #373867;
+}
+.menu{
+  background-color: #373867;
+}
+.button-send-message{
+  background-color: #AACE9B;
+}
+.icon-background-color{
+  background-color: #AACE9B;
+}
