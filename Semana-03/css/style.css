@@ -1,7 +1,7 @@
 h1{
   color: #373867;
   background-color: #46A37C;
-  /*font: Roboto;*/
+  font-family: "Roboto", sans-serif;
   margin-right: auto;
 }
 h2{
@@ -31,6 +31,7 @@ h6{
 
 p{
   color: #373867;
+  font-family: "Roboto", sans-serif;
 }
 .img-notebook{
   position: relative;
@@ -82,7 +83,7 @@ div{
   background-color: #AACE9B;
 }
 .icon-background-color{
-  background-color: #AACE9B;
+  background-color: #C4C4C4;
 }
 article{
   display: inline-block;
@@ -103,6 +104,13 @@ article{
   display: inline-block;
   width: 33%;
   box-shadow: none;
+}
+.who-we-are-section {
+  margin-left: 30%;
+}
+.who-we-are-section > div{
+  margin-left: auto;
+  margin-right: auto;
 }
 /*.sidebar{
   position: fixed;
