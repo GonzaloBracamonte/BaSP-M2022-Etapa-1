@@ -2,12 +2,67 @@ h1{
   color: #373867;
   background-color: #46A37C;
   /*font: Roboto;*/
+  margin-right: auto;
 }
 h2{
-  color: #46A37C;
+  color: #373867;
+  font-size: 50px;
+  width: 60%;
 }
 h3{
+  color: #46A37C;
+}
+h4{
   color: #373867;
+}
+blockquote{
+  color: #B4AFAF;
+  margin-right: auto;
+  width: 30%;
+}
+p{
+  color: #373867;
+
+}
+.img-notebook{
+  position: relative;
+  display: block;
+  margin-left: auto;
+
+  bottom: 210px;
+  width: 30%;
+}
+.p-in-block{
+  display: block;
+  margin-right: auto;
+  width: 50%;
+}
+/*.first-section{
+  content: "";
+  clear: both;
+  display: table;
+  background-color: yellowgreen;
+}*/
+div{
+  width: 50%;
+  height: 50%;
+}
+
+.div-descriptive-1{
+  width: 250px;
+  height: 200px;
+  position: relative;
+  background-color: antiquewhite;
+  
+}
+.div-descriptive-2{
+  width: 250px;
+  height: 200px;
+  position: relative;
+  left: 300px;
+  bottom: 440px;
+  background-color: beige;
+  
 }
 .menu{
   background-color: #373867;
@@ -18,3 +73,29 @@ h3{
 .icon-background-color{
   background-color: #AACE9B;
 }
+article{
+  display: inline-block;
+  width: 40%;
+  box-shadow: 2px 2px 5px 0 #999
+}
+.lower-article{
+  display: inline-block;
+  width: 33%;
+  box-shadow: none;
+}
+/*.sidebar{
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  background: #373867;
+  font-size: 0.65em;
+}
+.nav{
+  position: relative;
+  margin: 0 15%;
+  text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}*/
+
