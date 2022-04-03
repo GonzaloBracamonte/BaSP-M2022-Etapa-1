@@ -66,7 +66,6 @@ div{
   height: 200px;
   position: relative;
   background-color: antiquewhite;
-  
 }
 .div-descriptive-2{
   width: 250px;
@@ -75,7 +74,6 @@ div{
   left: 300px;
   bottom: 440px;
   background-color: beige;
-  
 }
 .menu{
   background-color: #373867;
@@ -89,7 +87,17 @@ div{
 article{
   display: inline-block;
   width: 40%;
-  box-shadow: 2px 2px 5px 0 #999
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 0 #999
+}
+.section-description > article {
+  display: inline-block;
+  width: 35%;
+  margin: 50px;
+}
+.section-description > article > div{
+  justify-content: center;
+  padding-left: 20%;
 }
 .lower-article{
   display: inline-block;
