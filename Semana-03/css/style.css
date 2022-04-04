@@ -7,6 +7,8 @@ h1{
   width: 95%;
   margin-left: 115px;
   margin-top: -121px;
+  text-align: left;
+  text-shadow: 5px 5px 10px #999;
 }
 h2{
   color: #373867;
@@ -37,6 +39,10 @@ p{
   color: #373867;
   font-family: "Roboto", sans-serif;
 }
+a{
+  color: black; 
+  text-decoration: none;
+}
 div{
   width: 50%;
   height: 50%;
@@ -55,9 +61,29 @@ header{
   background-color: #C4C4C4;
   height: 60%;
   width: 8%;
+  position: sticky;
+  top: 100px;
 }
 
 /*Sidebar*/
+
+.sidebar{
+  position: fixed;
+  width: 8%;
+  height: 100%;
+  margin-top: -35px;
+  background: #373867;
+  font-size: 25px;
+  text-align: left;
+}
+aside > nav > ul > li{
+  margin-left: 25px;
+  margin-top: 25px;
+}
+aside > nav > ul > li > a{
+  color: white;
+
+}
 
 /*Primera Seccion: Descripcion de pagina*/
 
@@ -66,8 +92,11 @@ header{
 
 
 /*Tercera Seccion: Triangulos con info*/
-
-
+.info-section > div {
+  display: inline-block;
+  margin-left: 20%;
+  width: 17%;
+}
 /*Cuarta Seccion: Formulario*/
 
 
@@ -90,11 +119,7 @@ header{
   margin-right: auto;
   width: 50%;
 }
-.info-section > div {
-  display: inline-block;
-  margin-left: 20%;
-  width: 35%;
-}
+
 /*.first-section{
   content: "";
   clear: both;
@@ -145,18 +170,14 @@ header{
 }
 .who-we-are-section {
   margin-left: 30%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .who-we-are-section > div{
   margin-left: auto;
   margin-right: auto;
 }
-/*.sidebar{
-  position: fixed;
-  width: 25%;
-  height: 100vh;
-  background: #373867;
-  font-size: 0.65em;
-}
+/*
 .nav{
   position: relative;
   margin: 0 15%;
