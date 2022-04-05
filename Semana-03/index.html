@@ -100,30 +100,48 @@
 				<img src="./img/icon-decision-making.png" alt="Decision making">
 			</div>
 		</section>
-		<section> <!-- Cuarta Seccion: Formulario-->
+		<section class="form"> <!-- Cuarta Seccion: Formulario-->
 			<h4>Contac us for information about the system</h4>
 			<form action="getform.php" method="get">
-				<div>
-					<label>First name:<input type="Placeholder" placeholder="Pedro"></label>
-					<label>Last name:<input type="Placeholder" placeholder="Rodriguez"></label>
+				<div class="names">
+					<label>First name:</label>
+					<label>Last name:</label>
 				</div>
 				<div>
-					<label>E-mail:<input type="Placeholder" placeholder="pedro_rodriguez@example"></label>
+					
 				</div>
 				<div>
-					<input list="area" name="myName">
+					<input size="33" type="Placeholder" placeholder="Pedro">
+					<input size="33" type="Placeholder" placeholder="Rodriguez">
+				</div>
+				<div>
+					<label>E-mail:</label>
+				</div>
+				<div>
+					<input size="102px" type="Placeholder" placeholder="pedro_rodriguez@example">
+				</div>
+				<div>
+					<label>Contact area:</label>
+				</div>
+				<div>
+					<input size="102px" list="area" name="myName">
+				</div>
+				<div>
 					<datalist id="area">
 						<option value="Development"></option>
 						<option value="QA"></option>
 						<option value="Sales"></option>
 						<option value="Marketing"></option>
 					</datalist>
-					<label>Contact area:<input type="Option" placeholder="Type here"></label>
+				</div>
+				<div>
+					<textarea type="Option" placeholder="Type here" rows="10" cols="100"></textarea>
 				</div>
 				<div>
 					<input type="submit" value="SEND MESSAGE" class="button-send-message">
 					<input type="submit" value="RESET">
 				</div>
+				
 			</form>
 		</section>
 		<section > <!--Quinta Seccion: "Quienes somos"-->
@@ -133,8 +151,8 @@
 					<p>RR time tracker is a web platform that help to manage time at work.</p>
 					<p>¿What type of application do you have in mind?</p>
 					<p>
-						We´re providing you with the core UI kit needed to kickstart your design and development while also 
-						allowing you to add new functionalities to the existing capabilities.
+						We´re providing you with the core UI kit needed to kickstart your design and development 
+						while also allowing you to add new functionalities to the existing capabilities.
 					</p>
 				</div>
 			</article>
