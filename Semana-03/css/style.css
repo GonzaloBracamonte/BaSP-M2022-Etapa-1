@@ -1,41 +1,55 @@
+body{
+  font-family: "Roboto", sans-serif;
+}
 h1{
   color: #373867;
   font-family: "Roboto", sans-serif;
   font-size: 50px;
   text-align: left;
-  margin-left: 50px;
-  margin-top: 20px;
-  text-shadow: 5px 5px 10px #999;
+  margin-left: 5%;
+  margin-top: 30px;
+  text-shadow: 2px 2px 3px rgb(0, 0, 0);
 }
 
 h2{
   color: #373867;
-  font-size: 50px;
-  width: 60%;
+  font-size: 100px;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
 h3{
   color: #46A37C;
 }
 h4{
   color: #373867;
+  text-align: left;
+  font-size: 20px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 h5{
   font-size: 25px;
-  text-align: center;
+  text-align: left;
 }
 
 h6{
   text-align: center;
   font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+
 }
 blockquote{
   color: #B4AFAF;
   margin-right: auto;
-  width: 30%;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 p{
   color: #373867;
-  font-family: "Roboto", sans-serif;
 }
 a{
   color: black; 
@@ -53,7 +67,9 @@ article{
   box-shadow: 5px 5px 10px 0 #999
 }
 section{
-  margin-left: 300px;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 /*Header*/
 header{
@@ -70,7 +86,6 @@ header{
 }
 
 /*Sidebar*/
-
 .sidebar{
   position: fixed;
   width: 15%;
@@ -97,17 +112,40 @@ aside > nav > ul > li > a{
   color: white;
 }
 /*Primera Seccion: Descripcion de pagina*/
+.first-section{
+  margin-bottom: -20%;
+}
 .img-notebook{
   position: relative;
   display: block;
   margin-left: auto;
-  bottom: 148px;
+  bottom: 360px;
   width: 30%;
+}
+.p-in-block{
+  display: block;
+  margin-right: auto;
+  width: 35%;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 /*Segunda Seccion: Descripcion en cuadrados*/
-
-
+.section-description > article {
+  display: inline-block;
+  width: 35%;
+  margin: 50px;
+}
+.section-description > article > div{
+  justify-content: center;
+  padding-left: 20%;
+}
+.section-description > article > div > h3 {
+  margin: 10px;
+}
+.section-description > article > div > p{
+  margin: 10px;
+}
 /*Tercera Seccion: Triangulos con info*/
 .info-section > div {
   display: inline-block;
@@ -118,29 +156,38 @@ aside > nav > ul > li > a{
 
 
 /*Quinta Seccion: "Quienes somos"*/
-
-
-/*Sexta seccion: About us*/
-
-/*Footer*/
-
-
-.p-in-block{
-  display: block;
+.who-we-are-section {
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.who-we-are-section > div{
+  margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+.who-we-are-section > div > h4{
+  font-size: 30px;
+  margin-left: -145px;
+}
+.who-we-are-section > div > p{
+  margin-left: -145px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+/*Sexta seccion: About us*/
+.list-ul{
+  list-style-type:circle;
 }
 
-/*.first-section{
-  content: "";
-  clear: both;
-  display: table;
-  background-color: yellowgreen;
-}*/
+.list-ol{
+  list-style-type:decimal;
+}
+/*Footer*/
 
-.footer-div{
+.footer > div{
   display: inline-block;
-  width: 20px;  
+  width: 50px;  
   margin-left: 35%;
   margin-right: -30%;
 }
@@ -165,36 +212,9 @@ aside > nav > ul > li > a{
   background-color: #AACE9B;
 }
 
-.section-description > article {
-  display: inline-block;
-  width: 35%;
-  margin: 50px;
-}
-.section-description > article > div{
-  justify-content: center;
-  padding-left: 20%;
-}
+
 .lower-article{
   display: inline-block;
   width: 33%;
   box-shadow: none;
 }
-.who-we-are-section {
-  margin-left: 30%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.who-we-are-section > div{
-  margin-left: auto;
-  margin-right: auto;
-}
-/*
-.nav{
-  position: relative;
-  margin: 0 15%;
-  text-align: right;
-  top: 50%;
-  transform: translateY(-50%);
-  font-weight: bold;
-}*/
-
