@@ -111,6 +111,16 @@ aside li{
 aside a{
   color: white;
 }
+.aside-list img{
+  max-width: 20%;
+  max-width: 20%;
+  object-fit: contain;
+}
+.members img{
+  max-width: 10%;
+  max-width: 10%;
+  object-fit: contain;
+}
 /*Primera Seccion: Descripcion de pagina*/
 
 .img-notebook{
