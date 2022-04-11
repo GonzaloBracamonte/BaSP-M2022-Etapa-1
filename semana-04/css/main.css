@@ -118,8 +118,8 @@ main{
 
 /*Quinta Seccion: "Quienes somos"*/
 .who-we-are-section {
-  width: 70%;
-  padding: 5% 0 5% 5%;
+  width: 90%;
+  margin: 5% 0 5% 5%;
 }
 .who-we-are-section div{
   margin-left: auto;
@@ -127,14 +127,12 @@ main{
 }
 .who-we-are-section h4{
   font-size: 30px;
-  padding-left: -145px;
+  text-align: center;
 }
 .who-we-are-section p{
-  margin-left: -145px;
-  margin-top: 30px;
   margin-bottom: 30px;
-  text-align: justify;
-  font-size: 20px;
+  text-align: center;
+  font-size: 15px;
 }
 /*Sexta seccion: About us*/
 .list-ul{
