@@ -115,6 +115,9 @@ main{
 .form div{
   margin-bottom: 15px;
 }
+.button-send-message{
+  background-color: #AACE9B;
+}
 
 /*Quinta Seccion: "Quienes somos"*/
 .who-we-are-section {
@@ -135,22 +138,24 @@ main{
   font-size: 15px;
 }
 /*Sexta seccion: About us*/
+.lower-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.lower-section article{
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 210px;
+  margin: 10px 10px;
+  box-shadow: none;
+}
+.lower-section div{
+}
 .list-ul{
   list-style-type:circle;
 }
-
 .list-ol{
   list-style-type:decimal;
 }
-.menu{
-  background-color: #373867;
-}
-.button-send-message{
-  background-color: #AACE9B;
-}
 
-.lower-article{
-  display: inline-block;
-  width: 33%;
-  box-shadow: none;
-}
