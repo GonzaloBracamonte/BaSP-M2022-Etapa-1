@@ -1,0 +1,158 @@
+main{
+  padding: 0px 30px;
+}
+@media (max-width: 820px) {
+  .sidebar {
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+  h1{
+    font-size: 30px;
+  }
+  header{
+    display: flex;
+  }
+}
+@media (min-width: 820px) {
+  .hmbr-container{
+    display: none;
+  } 
+}
+.img-notebook{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  bottom: 360px;
+  width: 30%;
+}
+.p-in-block{
+  display: block;
+  margin-right: auto;
+  width: 35%;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+/*Segunda Seccion: Descripcion en cuadrados*/
+.section-description{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-description article{
+  flex:auto;
+  flex-basis: 30%;
+  margin: 10% 45px;
+}
+
+.section-description div{
+  justify-content: center;
+  padding-left: 20%;
+}
+.section-description h3{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
+.section-description p{
+  text-align: center;
+  margin: 5px;
+}
+/*Tercera Seccion: Triangulos con info*/
+
+.info-section div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.info-section img{
+  max-height: 20%;
+  max-width: 20%;
+  object-fit: contain;
+}
+.info-section h4{
+  display: inline-block;
+  width: 30%;
+}
+.info-section div{
+  display:flex;
+  flex-wrap:flex;
+  justify-content: center;
+  flex-basis:40%;
+}
+/* .extras-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-section div{
+  display:flex;
+  flex-wrap:flex;
+  justify-content: center;
+  flex-basis:40%;
+}
+
+.info-section h4{
+  text-align: center ;
+  padding-top:2%;
+  width: 40%;  
+  min-width:300px;
+} */
+
+/*Cuarta Seccion: Formulario*/
+.form{
+  padding-left: 30%;
+}
+.names label{
+  padding-right: 35%;
+}
+.form div{
+  margin-bottom: 15px;
+}
+
+/*Quinta Seccion: "Quienes somos"*/
+.who-we-are-section {
+  width: 70%;
+  padding: 5% 0 5% 5%;
+}
+.who-we-are-section div{
+  margin-left: auto;
+  margin-right: auto;
+}
+.who-we-are-section h4{
+  font-size: 30px;
+  padding-left: -145px;
+}
+.who-we-are-section p{
+  margin-left: -145px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 20px;
+}
+/*Sexta seccion: About us*/
+.list-ul{
+  list-style-type:circle;
+}
+
+.list-ol{
+  list-style-type:decimal;
+}
+.menu{
+  background-color: #373867;
+}
+.button-send-message{
+  background-color: #AACE9B;
+}
+
+.lower-article{
+  display: inline-block;
+  width: 33%;
+  box-shadow: none;
+}
