@@ -63,42 +63,37 @@ main{
   margin: 5px;
 }
 /*Tercera Seccion: Triangulos con info*/
-
-.info-section div{
-  display:flex;
-  flex-wrap:flex;
-  justify-content: center;
-  flex-basis:40%;
-}
-.info-section img{
-  max-height: 20%;
-  max-width: 20%;
-  object-fit: contain;
-}
-.info-section h4{
-  display: inline-block;
-  width: 30%;
-}
-
-/* .extras-container {
+.info-section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.info-section div{
+.info-section-pair{
   display:flex;
-  flex-wrap:flex;
-  justify-content: center;
+  flex-wrap:wrap;
   flex-basis:40%;
+  margin: 10px 0;
 }
 
+.info-section-odd{
+  display:flex;
+  flex-basis:40%;
+  flex-direction: row-reverse;
+
+}
+.info-section img{
+  display: flex;
+  max-height: 20%;
+  max-width: 20%;
+  object-fit: contain;
+}
 .info-section h4{
-  text-align: center ;
-  padding-top:2%;
-  width: 40%;  
-  min-width:300px;
-} */
+  text-align: center;
+  margin:5% 0;
+  width: 40%;
+  min-width: 245px;
+}
 
 /*Cuarta Seccion: Formulario*/
 h4{
@@ -130,7 +125,6 @@ form{
   flex-wrap: wrap;
   flex-direction: column;
   flex-basis: 49%;
-  /* margin-left: 10px; */
 }
 .first-name-div label{
   padding-right: 35%;
@@ -141,39 +135,43 @@ form{
   margin-bottom: 15px;
 }
 
-
-
-
 .button-send-message{
   background-color: #AACE9B;
 }
+
 #email-div{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
 }
+
 #area-div{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
 }
+
 #datalist-div{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
 }
+
 #text-area-div{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
 }
+
 #buttons-div{
   display: flex;
   flex-basis: 100%;
 }
+
 #buttons-div input{
   margin: 10px;
 }
+
 /*Quinta Seccion: "Quienes somos"*/
 .who-we-are-section {
   width: 90%;
