@@ -105,33 +105,28 @@
 				<img src="./img/icon-decision-making.png" alt="Decision making">
 			</div>
 		</section>
-		<section class="form"> <!-- Cuarta Seccion: Formulario-->
-			<h4>Contac us for information about the system</h4>
+		<section class="form-container"> <!-- Cuarta Seccion: Formulario-->
+			<div>
+				<h4>Contact us for information about the system</h4>
+			</div>
 			<form action="getform.php" method="get">
-				<div class="names">
+				<div class="first-name-div">
 					<label>First name:</label>
+					<input  type="Placeholder" placeholder="Pedro">
+				</div>
+				<div class="last-name-div"> 
 					<label>Last name:</label>
+					<input  type="Placeholder" placeholder="Rodriguez">
 				</div>
-				<div>
-					
-				</div>
-				<div>
-					<input size="33" type="Placeholder" placeholder="Pedro">
-					<input size="33" type="Placeholder" placeholder="Rodriguez">
-				</div>
-				<div>
+				<div id="email-div">
 					<label>E-mail:</label>
+					<input type="Placeholder" placeholder="pedro_rodriguez@example">
 				</div>
-				<div>
-					<input size="102px" type="Placeholder" placeholder="pedro_rodriguez@example">
-				</div>
-				<div>
+				<div id="area-div">
 					<label>Contact area:</label>
+					<input  list="area" name="myName">
 				</div>
-				<div>
-					<input size="102px" list="area" name="myName">
-				</div>
-				<div>
+				<div id="datalist-div">
 					<datalist id="area">
 						<option value="Development"></option>
 						<option value="QA"></option>
@@ -139,10 +134,10 @@
 						<option value="Marketing"></option>
 					</datalist>
 				</div>
-				<div>
-					<textarea type="Option" placeholder="Type here" rows="10" cols="100"></textarea>
+				<div id="text-area-div">
+					<textarea type="Option" placeholder="Type here" ></textarea>
 				</div>
-				<div>
+				<div id="buttons-div">
 					<input type="submit" value="SEND MESSAGE" class="button-send-message">
 					<input type="submit" value="RESET">
 				</div>
