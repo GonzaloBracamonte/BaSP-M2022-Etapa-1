@@ -8,6 +8,9 @@ main{
   h1{
     font-size: 30px;
   }
+  h2{
+    font-size: 30px;
+  }
   footer{
     background-color: #373867;
   }
@@ -23,19 +26,27 @@ main{
     display: none;
   } 
 }
-.img-notebook{
-  position: relative;
-  display: block;
-  margin-left: auto;
-  bottom: 360px;
-  width: 30%;
+/*Primera seccion"*/
+
+.first-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
+.h2-div{
+  width: 80%;
+}
+
 .p-in-block{
-  display: block;
   margin-right: auto;
-  width: 35%;
+  width: 100%;
+}
+.p-in-block p{
   font-size: 25px;
   line-height: 35px;
+}
+.img-notebook{
+  max-width: 100px;
 }
 
 /*Segunda Seccion: Descripcion en cuadrados*/
@@ -137,29 +148,7 @@ form{
   margin-bottom: 15px;
 }
 
-.button-send-message{
-  background-color: #AACE9B;
-}
-
-#email-div{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
-#area-div{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
-#datalist-div{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
-#text-area-div{
+.form-div-content{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -174,6 +163,9 @@ form{
   margin: 10px;
 }
 
+.button-send-message{
+  background-color: #AACE9B;
+}
 /*Quinta Seccion: "Quienes somos"*/
 .who-we-are-section {
   width: 90%;

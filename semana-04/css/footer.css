@@ -14,11 +14,13 @@ footer h6{
   text-align: center;
   font-size: 15px;
 }
+
 .footer-tittle{
   display: flex;
   flex-basis: 100%;
   justify-content: center;
 }
+
 footer div{
   flex-basis: 10px;  
 }

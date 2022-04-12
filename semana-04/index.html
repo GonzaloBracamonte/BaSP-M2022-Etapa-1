@@ -6,24 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Trackgenix SA</title>
 		<link rel="stylesheet" href="./css/reset.css">
-		<link rel="stylesheet" href="./css/aside.css">
-		<link rel="stylesheet" href="./css/footer.css">
-		<link rel="stylesheet" href="./css/header.css">
-		<link rel="stylesheet" href="./css/main.css">
 		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/aside.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/main.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 	</head>
 	<body>
 		<header>
+			<div class="img-hambr">
+				<div class="hmbr-container">
+					<img src="./img/hamburguer.png" alt="">
+				</div>
+			</div>
 			<div class="title">
 				<h1>
 					Trackgenix SA 
 				</h1>
-			</div>
-			<div class="hmbr-container">
-				<div class="img-hambr">
-					<img src="./img/hamburguer.png" alt="">
-				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -44,14 +44,20 @@
 			</aside>
 		</main>
 		<section class="first-section"> <!--Primera Seccion: Descripcion de pagina-->
-			<h2>Hi, we are Trackgenix</h2>
-			<blockquote>The best choice for your business</blockquote>
-			<p class="p-in-block">
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
-				industry´s standard dummy text ever since the 1500, when an unknown printer took a gallery of type 
-				and scrambled it to make a type specimen book
-			</p>
-			<img src="./img/notebook-image.PNG" alt="" class="img-notebook">
+			<div class="h2-div">
+				<h2>Hi, we are Trackgenix</h2>
+				<blockquote>The best choice for your business</blockquote>
+			</div>
+			<div class="p-in-block">
+				<p >
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the 
+					industry´s standard dummy text ever since the 1500, when an unknown printer took a gallery of type 
+					and scrambled it to make a type specimen book
+				</p>
+			</div>
+			<div class="img-notebook">
+				<img src="./img/notebook-image.PNG" alt="" >
+			</div>
 		</section>
 		<section class="section-description"> <!--Segunda Seccion: Descripcion en cuadrados-->
 			<article>
@@ -118,15 +124,15 @@
 					<label>Last name:</label>
 					<input  type="Placeholder" placeholder="Rodriguez">
 				</div>
-				<div id="email-div">
+				<div class="form-div-content">
 					<label>E-mail:</label>
 					<input type="Placeholder" placeholder="pedro_rodriguez@example">
 				</div>
-				<div id="area-div">
+				<div class="form-div-content">
 					<label>Contact area:</label>
 					<input  list="area" name="myName">
 				</div>
-				<div id="datalist-div">
+				<div class="form-div-content">
 					<datalist id="area">
 						<option value="Development"></option>
 						<option value="QA"></option>
@@ -134,7 +140,7 @@
 						<option value="Marketing"></option>
 					</datalist>
 				</div>
-				<div id="text-area-div">
+				<div class="form-div-content">
 					<textarea type="Option" placeholder="Type here" ></textarea>
 				</div>
 				<div id="buttons-div">
