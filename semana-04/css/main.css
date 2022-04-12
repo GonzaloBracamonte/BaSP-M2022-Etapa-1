@@ -5,12 +5,14 @@ main{
   .sidebar {
     display: none;
   }
-
-  footer{
-    display: none;
-  }
   h1{
     font-size: 30px;
+  }
+  footer{
+    background-color: #373867;
+  }
+  footer a{
+    display: none;
   }
   header{
     display: flex;
