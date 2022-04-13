@@ -215,8 +215,8 @@ form{
   header{
     display: flex;
   }
-
 }
+
 @media (min-width: 820px) {
   .hmbr-container{
     display: none;
