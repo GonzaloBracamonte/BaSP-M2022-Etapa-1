@@ -14,6 +14,15 @@ nav{
   text-align: left;
 }
 
+aside li{
+  margin-left: 35%;
+  margin-top: 25px;
+}
+
+aside a{
+  color: white;
+}
+
 .icon-background{
   position: fixed;
   background-color: #C4C4C4;
@@ -30,15 +39,6 @@ nav{
 
 .icon-background a{
   margin-left: 25%;
-}
-
-aside li{
-  margin-left: 35%;
-  margin-top: 25px;
-}
-
-aside a{
-  color: white;
 }
 
 .aside-list img{
