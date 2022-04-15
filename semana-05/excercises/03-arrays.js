@@ -16,6 +16,8 @@ console.log("ex03-strings-A = " + months[5] + " y " + months[11]);
 //const reverse = months.reverse();
 //console.log("ex03-strings-E = " + reverse)
 
-const join = months.join("-")
-console.log("ex03-strings-F = " + join);
+//const join = months.join("-")
+//console.log("ex03-strings-F = " + join);
 
+var slice = months.slice(4,11);
+console.log("ex03-strings-G = " + slice);
