@@ -17,3 +17,11 @@ var a = "Ejemplo de mostrar la posicion de un caracter especifico";
 var b = " ";
 var c = a.indexOf(b);
 console.log("ex02-strings-E = " + c);
+
+var a = "concatenacion descriptiva"
+var b = a.substring(0,1).toUpperCase() + a.substring(1,13).toLowerCase();
+//var c = a.indexOf(" ");
+//console.log(c) 
+//Con la variable c logro encontrar el espacio que separa cada palabra y asi utilizar dicho indice
+var d = a.substring(14,15).toUpperCase() + a.substring(15,25).toLowerCase() ;
+console.log("ex02-strings-F = " + b + " " + d)
