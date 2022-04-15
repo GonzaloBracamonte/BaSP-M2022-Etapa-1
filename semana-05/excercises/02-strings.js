@@ -8,3 +8,7 @@ console.log("ex02-strings-B = " + b)
 var a = "Otra forma de mostrar cierta cantidad de caracteres";
 var b = a.substring(51 , 48);
 console.log("ex02-strings-C = " + b);
+
+var a = "eSTO ES UN EJEMPLO DE UPPER Y LOWER CASE";
+var b = a.substring(0,1).toUpperCase() + a.substring(1,10).toLowerCase();
+console.log("ex02-strings-C = " + b)
