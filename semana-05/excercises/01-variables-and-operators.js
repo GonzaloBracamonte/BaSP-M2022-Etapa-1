@@ -10,3 +10,10 @@ var b = "Mundo";
 var c;
 c = a + b
 console.log("ex01-variables and operators-B = " + c)
+
+
+var a = "Hola yo soy una variable. ";
+var b = "Y yo soy otra variable";
+var c;
+c = a + b;
+console.log("ex01-variables and operators-C = " + c.length)
