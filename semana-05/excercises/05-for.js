@@ -18,3 +18,10 @@ for (let i = 0; i < array.length; i++) {
     sentence[i] = array[i];
 }
 console.log("ex05-for-C = " + sentence)
+
+var number = []
+for (let i = 0; i < 10; i++) {
+    number += i 
+    number[i]
+}
+console.log("ex05-for-C = " + number)
