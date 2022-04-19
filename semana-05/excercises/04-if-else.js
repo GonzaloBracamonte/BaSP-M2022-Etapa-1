@@ -8,17 +8,17 @@ if (math<0.5) {
 var number = Math.random() * 100;
 var age = Math.round(number)
 if (age < 2) {
-  console.log("ex04-if-else-B = " + "Bebe")
+  console.log("ex04-if-else-B = " + "Baby")
 } else if (age <= 12) {
-  console.log("ex04-if-else-B = " +  "Niño")
+  console.log("ex04-if-else-B = " +  "Kid")
 } else if (age <= 19){
-  console.log("ex04-if-else-B = " +  "Adolescente")
+  console.log("ex04-if-else-B = " +  "Adolescent")
 } else if (age <= 30) {
-  console.log("ex04-if-else-B = " + "Joven")
+  console.log("ex04-if-else-B = " + "Young")
 } else if (age <= 60){
-  console.log("ex04-if-else-B = " + "Adulto")
+  console.log("ex04-if-else-B = " + "Adult")
 } else if (age <= 75) {
-  console.log("ex04-if-else-B = " + "Adulto mayor")
+  console.log("ex04-if-else-B = " + "Elderly")
 } else if (age <= 100){
-  console.log("ex04-if-else-B = " + "Anciano")
+  console.log("ex04-if-else-B = " + "Ancient")
 }

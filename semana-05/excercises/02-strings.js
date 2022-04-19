@@ -1,24 +1,24 @@
-var a = "este es el ejemplo de uper case"
+var a = "This is the upper case example"
 console.log("ex02-strings-A = " + a.toLocaleUpperCase())
 
-var a = "Como mostrar cierta cantidad de caracteres"
+var a = "How to display certain amount of characters"
 var b = a.substring(0,5)
 console.log("ex02-strings-B = " + b)
 
-var a = "Otra forma de mostrar cierta cantidad de caracteres";
+var a = "Another way to display certain number of characters";
 var b = a.substring(51 , 48);
 console.log("ex02-strings-C = " + b);
 
-var a = "eSTO ES UN EJEMPLO DE UPPER Y LOWER CASE";
+var a = "tHIS IS AN EXAMPLE OF UPPER AND LOWER CASE";
 var b = a.substring(0,1).toUpperCase() + a.substring(1,10).toLowerCase();
 console.log("ex02-strings-D = " + b)
 
-var a = "Ejemplo de mostrar la posicion de un caracter especifico";
+var a = "Example of displaying the position of a specific character";
 var b = " ";
 var c = a.indexOf(b);
 console.log("ex02-strings-E = " + c);
 
-var a = "concatenacion descriptiva"
+var a = "descriptive concatenation"
 var b = a.substring(0,1).toUpperCase() + a.substring(1,13).toLowerCase();
 //var c = a.indexOf(" ");
 //console.log(c) 
