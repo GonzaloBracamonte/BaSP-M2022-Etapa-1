@@ -5,7 +5,7 @@ footer{
   display: flex;
   flex-wrap: wrap;
   flex-basis: 20%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -16,7 +16,8 @@ footer h6{
 }
 
 footer div{
-  flex-basis: 10px;  
+  flex-basis: 10px; 
+  margin: 0 30px; 
 }
 
 .footer-tittle{
