@@ -9,4 +9,6 @@ The Css file was created based on the landing page
 The CSS file was modified using flex-box
 https://gonzalobracamonte.github.io/BaSP-M2022-Etapa-1/semana-04/
 
+## Week 5
+Resolution of exercises done in JavaScript
 Project made by Bracamonte Gonzalo

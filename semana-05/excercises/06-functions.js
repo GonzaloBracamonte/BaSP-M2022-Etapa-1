@@ -1,10 +1,10 @@
-function operator(num1, num2){
+var answer = operator1(6,22)
+function operator1(num1, num2){
   return num1 + num2
 }
 console.log("ex06-functions-A = " + answer)
-var answer = operator(6,22)
 
-function operator(num1, num2){
+function operator2(num1, num2){
   if (isNaN(num1) || isNaN(num2)) {
     console.log("Uno de los campos es incorrecto")
     return NaN
@@ -12,7 +12,7 @@ function operator(num1, num2){
     return num1 + num2
   }
 }
-var answer = operator(21,64)
+var answer = operator2(21,64)
 console.log("ex06-functions-B = " + answer)
 
 function isInt(value) {
@@ -26,8 +26,8 @@ function isInt(value) {
 var answer = isInt(30)
 console.log("ex06-functions-C = " + answer)
 
-var answer = operator(7, 2)
-function operator(num1, num2){
+var answer = operator3(7, 2)
+function operator3(num1, num2){
   if (isNaN(num1) || isNaN(num2)) {
     console.log("Uno de los campos es incorrecto")
     return NaN
@@ -64,7 +64,7 @@ function validate(Num1, Num2){
 }
 
 function Operator(){
-  var resultadoNuevo = validate(6, 5.5)
+  var resultadoNuevo = validate(6, 5)
   console.log("ex06-functions-E = " + resultadoNuevo)
 }
 Operator();
