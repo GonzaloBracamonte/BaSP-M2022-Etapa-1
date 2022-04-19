@@ -58,12 +58,13 @@ function validate(Num1, Num2){
   else if (Num1 === parseFloat(Num1, 10) ||
     Num2 === parseFloat(Num2, 10))
     {
-      console.log("ERROR" +" "+ Math.round(Num1) + " " + Math.round(Num2))
+      console.log("ex06-functions-E = " + "Error! Se redondeara uno de los numeros" +" "
+      + Math.round(Num1) + " " + Math.round(Num2))
     }
 }
 
 function Operator(){
-  var resultadoNuevo = validate(5.6, 5)
+  var resultadoNuevo = validate(6, 5.5)
   console.log("ex06-functions-E = " + resultadoNuevo)
 }
 Operator();
