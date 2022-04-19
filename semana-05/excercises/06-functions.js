@@ -33,15 +33,37 @@ function operator(num1, num2){
     return NaN
   } 
   else if (num1 === parseInt(num1, 10) &&
-        num2 === parseInt(num2, 10))
+    num2 === parseInt(num2, 10))
   {
     return num1 + num2
   } 
   else if (num1 === parseFloat(num1, 10) ||
-        num2 === parseFloat(num2, 10))
-        {
-          console.log("ERROR" +" "+ Math.round(num1) + " " + Math.round(num2))
-        }
-      }
-      console.log("ex06-functions-D = " + answer)
+    num2 === parseFloat(num2, 10))
+    {
+      console.log("ERROR" +" "+ Math.round(num1) + " " + Math.round(num2))
+    }
+}
+console.log("ex06-functions-D = " + answer)
 
+function validate(Num1, Num2){
+  if (isNaN(Num1) || isNaN(Num2)) {
+    console.log("Uno de los campos es incorrecto")
+    return NaN
+  } 
+  else if (Num1 === parseInt(Num1, 10) &&
+    Num2 === parseInt(Num2, 10))
+  {
+    return Num1 + Num2
+  } 
+  else if (Num1 === parseFloat(Num1, 10) ||
+    Num2 === parseFloat(Num2, 10))
+    {
+      console.log("ERROR" +" "+ Math.round(Num1) + " " + Math.round(Num2))
+    }
+}
+
+function Operator(){
+  var resultadoNuevo = validate(5.6, 5)
+  console.log("ex06-functions-E = " + resultadoNuevo)
+}
+Operator();
