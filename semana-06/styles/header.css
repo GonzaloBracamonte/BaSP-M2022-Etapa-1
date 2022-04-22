@@ -1,0 +1,27 @@
+header{
+  display: flex;
+  width: 100%;
+  padding-bottom: 35px;
+  background-color: #46A37C;
+  align-items: center;
+}
+
+.title{
+  margin-left: -40px;
+  width: 80%;
+}
+
+.img-hambr {  
+  width: 20%;
+}
+
+.img-hambr{
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.hmbr-container img{
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
