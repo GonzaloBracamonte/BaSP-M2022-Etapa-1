@@ -1,0 +1,12 @@
+#buttons-div{
+  display: flex;
+  justify-content: center;
+}
+
+#buttons-div p{
+  font-size: 20px;
+}
+
+#buttons-div a{
+  color: #1675CC;
+}

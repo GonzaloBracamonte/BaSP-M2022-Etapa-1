@@ -1,0 +1,8 @@
+#buttons-div{
+  display: flex;
+  justify-content: flex-end;
+}
+.form-div-content{
+  margin: 0 10px;
+  flex-basis: 48%;
+}
