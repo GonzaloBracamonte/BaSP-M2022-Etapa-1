@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../styles/aside.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/login.css">
+  <script src="../javascript/login.js"></script>
 </head>
 <body>
   <header>
@@ -24,24 +25,29 @@
   </aside>
   <main>
     <section class="form-container"> 
-      <div>
+      <div class="form-container-header">
         <h4>Log In</h4>
       </div>
-      <form action="getform.php" method="get">
+      <form action="" method="" id="" name="form-login" onsubmit="validation()">
         <div class="form-div-content">
           <label>E-mail:</label>
-          <input type="Placeholder" placeholder="pedro_rodriguez@example">
+          <input type="text" id="email-input" value="">
         </div>
         <div class="form-div-content">
           <label>Password:</label>
-          <input  list="area" name="myName">
+          <input type="password" name="myPassword" id="password-input" value="">
         </div>
         <div class="sub-line-form">
           <label>Remember me</label>
+        </div>
+        <div class="sub-line-form">
           <label><a href="#">Forgot Password?</a></label>
         </div>
         <div id="buttons-div">
-          <input type="submit" value="ACCEPT" class="button-send-message">
+          <div>
+            <button type="button" onclick="validationEmail(); validationPassword()" 
+            class="button-send-message">Accept</button>
+          </div>
           <p>Or</p>
           <h5><a href="../views/sing-up.html">Sign Up!</a></h5>
         </div>
