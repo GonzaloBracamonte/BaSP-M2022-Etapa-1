@@ -28,9 +28,9 @@
       <div class="form-container-header">
         <h4>Log In</h4>
       </div>
-      <form action="" method="" id="" name="form-login" onsubmit="validation()">
+      <form action="" method="" id="form" name="form-login" onsubmit="validation()">
         <div class="form-div-content">
-          <label>E-mail:</label>
+          <label name="emailLabel">E-mail:</label>
           <input type="text" id="email-input" value="">
         </div>
         <div class="form-div-content">
@@ -45,7 +45,7 @@
         </div>
         <div id="buttons-div">
           <div>
-            <button type="button" onclick="validationEmail(); validationPassword()" 
+            <button type="button" onclick="validationEmail(); validationPassword(), alertLogin()" 
             class="button-send-message">Accept</button>
           </div>
           <p>Or</p>
