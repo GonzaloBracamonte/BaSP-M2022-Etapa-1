@@ -18,4 +18,8 @@ The CSS file was modified using flex-box
 Resolution of exercises done in JavaScript
 <https://gonzalobracamonte.github.io/BaSP-M2022-Etapa-1/semana-05/>
 
+## Week 6
+
+Added the Javascript logic and Javascript file
+<https://gonzalobracamonte.github.io/BaSP-M2022-Etapa-1/semana-06/views/>
 Project made by Bracamonte Gonzalo
