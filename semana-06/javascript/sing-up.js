@@ -1,3 +1,12 @@
+window.onload = function(){
+  var form = document.getElementById("singUpForm");
+  form.addEventListener("blur", function( event ) {
+  event.target.style.background = "pink";
+  }, true);
+  form.addEventListener("focus", function( event ) {
+  event.target.style.background = "";
+  }, true);
+}
 
 function validationName() {
   firstName = document.getElementById("firstName").value;

@@ -28,14 +28,16 @@
       <div class="form-container-header">
         <h4>Log In</h4>
       </div>
-      <form action="" method="" id="form" name="form-login" onsubmit="validation()">
+      <form action="" method="" id="myForm" name="form-login" onsubmit="validation()">
         <div class="form-div-content">
           <label name="emailLabel">E-mail:</label>
-          <input type="text" id="email-input" value="">
+          <input type="text" id="emailInput">
+          <p id="emailError" style="visibility: hidden;">Email error</p>
         </div>
         <div class="form-div-content">
           <label>Password:</label>
-          <input type="password" name="myPassword" id="password-input" value="">
+          <input type="password" name="myPassword" id="passwordInput" value="">
+          <p id="passwordError" style="visibility: hidden;">Password error</p>
         </div>
         <div class="sub-line-form">
           <label>Remember me</label>
