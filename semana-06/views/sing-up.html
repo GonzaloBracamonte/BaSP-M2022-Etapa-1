@@ -28,48 +28,58 @@
         <div class="form-div-content">
           <label>Name</label>
           <input type="text" placeholder="Pedro" id="firstName">
+          <p id="fNameP" style="visibility: hidden;">First name error</p>
         </div>
         <div class="form-div-content">
           <label>Last Name:</label>
           <input type="text" placeholder="Rodriguez" id="lastName">
+          <p id="lNameP" style="visibility: hidden;">Last name error</p>
         </div>
         <div class="form-div-content">
           <label>DNI:</label>
           <input type="text" placeholder="12345678" id="dni">
+          <p id="dniP" style="visibility: hidden;">DNI error</p>
         </div>
         <div class="form-div-content">
           <label>Date of Birth:</label>
-          <input type="date" id="dateOfBirth" 
+          <input type="text" id="dateOfBirth" 
           min="1900-01-01" max="2019-04-25" required="required">
           <pre id="salida"></pre>
         </div>
         <div class="form-div-content">
           <label>Phone Number:</label>
           <input type="text" placeholder="1234567890" id="phone">
+          <p id="pNumberP" style="visibility: hidden;">Phone number error</p>
         </div>
         <div class="form-div-content">
           <label>Address:</label>
           <input type="text" placeholder="Pellegrinni 1234" id="address">
+          <p id="addressP" style="visibility: hidden;">Address error</p>
         </div>
         <div class="form-div-content">
           <label>Location:</label>
           <input type="text" placeholder="Rosario" id="city">
+          <p id="cityP" style="visibility: hidden;">City error</p>
         </div>
         <div class="form-div-content">
           <label>Postal Code:</label>
           <input type="text" placeholder="2000" id="pc">
+          <p id="pcP" style="visibility: hidden;">Postal code error</p>
         </div>
         <div class="form-div-content">
           <label>E-mail:</label>
           <input type="text" placeholder="pedro_rodriguez@example" id="email">
+          <p id="emailP" style="visibility: hidden;">Email error</p>
         </div>
         <div class="form-div-content">
           <label>Password:</label>
           <input type="password" name="myPassword" id="password">
+          <p id="passwordP" style="visibility: hidden;">Password error</p>
         </div>
         <div class="form-div-content">
           <label>Repeat Password:</label>
           <input type="password" name="myPassword" id="reCheckPassword">
+          <p id="rePasswordP" style="visibility: hidden;">Password error</p>
         </div>
         <div id="buttons-div">
           <input type="button" onclick="validationForm()" value="ACCEPT" class="button-send-message">

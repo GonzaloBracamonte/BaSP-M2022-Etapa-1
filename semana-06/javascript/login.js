@@ -1,22 +1,13 @@
 var truePassword = "26abril"
 var trueEmail = "braca95gonza@gmail.com"
-// errorEmail.innerText = "Lo siento, no pudimos encontrar tu cuenta";
-// emailParent.parentNode.appendChild(errorEmail);
-
-
-
-
-
 
 function validationEmail() {
   emailValue = document.getElementById("emailInput").value;
   if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(emailValue)) {
     console.log("The user is valid")
     if (emailValue == trueEmail) {
-      console.log("Usuario correcto")
       return true
     } else {
-      console.log("usuario incorrecto")
       return false
     }
   }
@@ -45,7 +36,7 @@ function validationPassword(){
 
 function alertLogin(){
   if (validationEmail() == true && validationPassword() == true) {
-    alert("Ingreso concedido")
+    alert("Access granted")
   }
 }
 
