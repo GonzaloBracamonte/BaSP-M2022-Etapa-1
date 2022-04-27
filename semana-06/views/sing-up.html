@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <h1>Trackgenix SA</h1>
+      <h1><a href="../views/index.html">Trackgenix SA</a></h1>
     </header>
     <aside>
       <div class="icon-background"></div>
@@ -42,7 +42,7 @@
         </div>
         <div class="form-div-content">
           <label>Date of Birth:</label>
-          <input type="text" id="dateOfBirth" 
+          <input type="date" id="dateOfBirth" 
           min="1900-01-01" max="2019-04-25" required="required">
           <pre id="salida"></pre>
         </div>
@@ -82,7 +82,8 @@
           <p id="rePasswordP" style="visibility: hidden;">Password error</p>
         </div>
         <div id="buttons-div">
-          <input type="button" onclick="validationForm()" value="ACCEPT" class="button-send-message">
+          <input type="button" onclick="validationForm()" value="Create" class="button-send-message">
+          <h5><a href="../views/login.html">Log in!</a></h5>
         </div>
       </form>
     </section>

@@ -242,7 +242,7 @@ function validationPhoneNumber() {
 
 function validationAddress() {
   address = document.getElementById("address").value;
-  if (address == null || address.length < 5 || /^\s+$/.test(address)) {
+  if (address == null || address.length < 5 || /^\s*$/.test(address)) {
     return false
   } else{
     return true
@@ -251,7 +251,7 @@ function validationAddress() {
 
 function validationCity() {
   city = document.getElementById("city").value;
-  if (city == null || city.length < 3 || /^\s+$/.test(city) || (!/^\d{1,5}$/.test(city))) {
+  if (city == null || city.length < 3 || /^\s+$/.test(city)) {
     return false
   } else{
     return true
@@ -346,7 +346,7 @@ function validationForm() {
     return false
   } 
   else{
-    alert("Sing Up Complete!")
+    alert("Sing Up Complete! Your email registered is " + emailLog )
     return true;
   }
 }

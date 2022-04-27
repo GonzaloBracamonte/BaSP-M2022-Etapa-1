@@ -1,3 +1,6 @@
+h1 a{
+  color: #373867;
+}
 .form-container-header{
 justify-content: center;
 }
@@ -10,7 +13,6 @@ justify-content: center;
 .form-div-content{
   display: flex;
   justify-content: center;
-  
   flex-basis: 100%;
 }
 .sub-line-form{
