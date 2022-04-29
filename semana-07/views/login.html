@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trackgenix S.A.</title>
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/landing.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="../styles/aside.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/login.css">
+  <script src="../javascript/login.js"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="../views/index.html">Trackgenix SA</a></h1>
+  </header>
+  <aside>
+    <div class="icon-background">
+    </div>
+  </aside>
+  <main>
+    <section class="form-container"> 
+      <div class="form-container-header">
+        <h4>Log In</h4>
+      </div>
+      <form action="" method="" id="myForm" name="form-login" onsubmit="validation()">
+        <div class="form-div-content">
+          <label name="emailLabel">E-mail:</label>
+          <input type="text" id="emailInput">
+          <p id="emailError" style="visibility: hidden;">Email error</p>
+        </div>
+        <div class="form-div-content">
+          <label>Password:</label>
+          <input type="password" name="myPassword" id="passwordInput" value="">
+          <p id="passwordError" style="visibility: hidden;">Password error</p>
+        </div>
+        <div class="sub-line-form">
+          <label>Remember me</label>
+        </div>
+        <div class="sub-line-form">
+          <label><a href="#">Forgot Password?</a></label>
+        </div>
+        <div id="buttons-div">
+          <div>
+            <button type="button" onclick="validationEmail(); validationPassword(), alertLogin()" 
+            class="button-send-message">Accept</button>
+          </div>
+          <p>Or</p>
+          <h5><a href="../views/sing-up.html">Sign Up!</a></h5>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

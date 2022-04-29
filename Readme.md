@@ -23,4 +23,9 @@ Resolution of exercises done in JavaScript
 Added the Javascript logic and Javascript file
 <https://gonzalobracamonte.github.io/BaSP-M2022-Etapa-1/semana-06/views/>
 
+## Week 7
+
+Added the request and fetch logic on the Javascript file
+<https://gonzalobracamonte.github.io/BaSP-M2022-Etapa-1/semana-07/views/>
+
 Project made by Bracamonte Gonzalo
