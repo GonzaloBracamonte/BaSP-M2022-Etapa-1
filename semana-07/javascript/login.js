@@ -71,22 +71,7 @@ function validationPassword() {
 function alertLogin() {
   if (validationEmail() == true && validationPassword() == true) {
     alert("Access granted");
-    // fetch(
-    //   "https://basp-m2022-api-rest-server.herokuapp.com/login?email=rose@radiumrocket.com&password=BaSP2022"
-    // )
-    //   .then(function (Response) {
-    //     console.log(Response);
-    //     return Response.json();
-    //   })
-    //   .then(function (jsonResponse) {
-    //     console.log(jsonResponse);
-    //   })
-    //   .catch(function (error) {
-    //     console.log("Error: " + error);
-    //   });
-    var url = new URL(
-      "https://basp-m2022-api-rest-server.herokuapp.com/login"
-    );
+    var url = new URL("https://basp-m2022-api-rest-server.herokuapp.com/login");
     var params = {
       email: sessionStorage.getItem("email"),
       password: sessionStorage.getItem("password"),

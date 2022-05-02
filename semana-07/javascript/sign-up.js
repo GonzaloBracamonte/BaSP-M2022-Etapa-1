@@ -2,7 +2,7 @@ window.onload = function () {
   var fName = document.getElementById("firstName");
   var lName = document.getElementById("lastName");
   var dni = document.getElementById("dni");
-  // var dOfBirth = document.getElementById("dateOfBirth");
+  var dOfBirth = document.getElementById("dateOfBirth");
   var pNumber = document.getElementById("phone");
   var address = document.getElementById("address");
   var city = document.getElementById("city");
@@ -33,7 +33,6 @@ window.onload = function () {
   // localStorage.setItem("zip", postalCode);
   // localStorage.setItem("email", emailLog);
   // localStorage.setItem("password", password);
-  // localStorage.clear();
 
   fName.addEventListener("focus", fNameFocus, true);
   fName.addEventListener("blur", fNameBlur, true);
@@ -247,16 +246,22 @@ function validationDni() {
 }
 
 function validationDateOfBirth() {
-  // var [year, month, day] = dateToCheck.split("-");
+  // var dOfBirth = document.getElementById("dateOfBirth").value;
+  // var [year, month, day] = dOfBirth.split("/");
   // var isoFormattedStr = `${day}/${month}/${year}`;
   // var date = new Date(isoFormattedStr);
   // var timestamp = date.getTime();
   // if (typeof timestamp !== "number" || Number.isNaN(timestamp))
   // {
-  //     return false;
+  //   console.log("Fecha error")
+  //   return false;
+  // } else if (new Date(dOfBirth.value).getTime() > new Date().getTime()) {
+  //   console.log("Fecha invalida")
+  //   return false;
   // }
-  // return  isoFormattedStr;
-  localStorage.setItem("dob",);
+  // console.log("Salio todo bien")
+  // return isoFormattedStr;
+  localStorage.setItem("dob", "12/31/1995");
   return true;
 }
 
@@ -291,7 +296,7 @@ function validationCity() {
 }
 
 function validationPostalCode() {
-  localStorage.getItem("zip")
+  localStorage.getItem("zip");
   postalCode = document.getElementById("pc").value;
   if (postalCode < 5 || isNaN(postalCode)) {
     return false;
@@ -337,9 +342,7 @@ function passwordComparison() {
 }
 
 function validationForm() {
-  var url = new URL(
-    "https://basp-m2022-api-rest-server.herokuapp.com/signup"
-  );
+  var url = new URL("https://basp-m2022-api-rest-server.herokuapp.com/signup");
   var params = {
     name: localStorage.getItem("name"),
     lastName: localStorage.getItem("lastName"),
