@@ -1,4 +1,4 @@
-aside{
+aside {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -8,22 +8,22 @@ aside{
   margin-left: -30px;
 }
 
-nav{
+nav {
   height: 100%;
   font-size: 25px;
   text-align: left;
 }
 
-aside li{
+aside li {
   margin-left: 35%;
   margin-top: 25px;
 }
 
-aside a{
+aside a {
   color: white;
 }
 
-.icon-background{
+.icon-background {
   position: fixed;
   background-color: #C4C4C4;
   height: 120px;
@@ -31,23 +31,23 @@ aside a{
   margin-top: -120px;
 }
 
-.icon-background img{
+.icon-background img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-.icon-background a{
+.icon-background a {
   margin-left: 25%;
 }
 
-.aside-list img{
+.aside-list img {
   max-width: 20%;
   max-width: 20%;
   object-fit: contain;
 }
 
-.members img{
+.members img {
   max-width: 7%;
   max-width: 7%;
   object-fit: contain;

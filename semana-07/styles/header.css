@@ -1,4 +1,4 @@
-header{
+header {
   display: flex;
   width: 100%;
   padding-bottom: 35px;
@@ -6,21 +6,21 @@ header{
   align-items: center;
 }
 
-.title{
+.title {
   margin-left: -40px;
   width: 80%;
 }
 
-.img-hambr {  
+.img-hambr {
   width: 20%;
 }
 
-.img-hambr{
+.img-hambr {
   margin-top: 10px;
   padding-top: 10px;
 }
 
-.hmbr-container img{
+.hmbr-container img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;

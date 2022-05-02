@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trackgenix S.A.</title>
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/landing.css">
-		<link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/aside.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/sing-up.css">
-    <script src="../javascript/sing-up.js"></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/landing.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/aside.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/sing-up.css" />
+    <script src="../javascript/sign-up.js"></script>
   </head>
   <body>
     <header>
@@ -20,69 +20,79 @@
     <aside>
       <div class="icon-background"></div>
     </aside>
-    <section class="form-container"> 
+    <section class="form-container">
       <div>
         <h4>Sign Up</h4>
       </div>
       <form action="getform.php" id="singUpForm" method="get">
         <div class="form-div-content">
           <label>Name</label>
-          <input type="text" placeholder="Pedro" id="firstName">
-          <p id="fNameP" style="visibility: hidden;">First name error</p>
+          <input type="text" placeholder="Pedro" id="firstName" />
+          <p id="fNameP" style="visibility: hidden">First name error</p>
         </div>
         <div class="form-div-content">
           <label>Last Name:</label>
-          <input type="text" placeholder="Rodriguez" id="lastName">
-          <p id="lNameP" style="visibility: hidden;">Last name error</p>
+          <input type="text" placeholder="Rodriguez" id="lastName" />
+          <p id="lNameP" style="visibility: hidden">Last name error</p>
         </div>
         <div class="form-div-content">
           <label>DNI:</label>
-          <input type="text" placeholder="12345678" id="dni">
-          <p id="dniP" style="visibility: hidden;">DNI error</p>
+          <input type="text" placeholder="12345678" id="dni" />
+          <p id="dniP" style="visibility: hidden">DNI error</p>
         </div>
         <div class="form-div-content">
           <label>Date of Birth:</label>
-          <input type="date" id="dateOfBirth" 
-          min="1900-01-01" max="2019-04-25" required="required">
+          <input
+            type="date"
+            id="dateOfBirth"
+            min="1900-01-01"
+            max="2019-04-25"
+            required="required"
+          />
           <pre id="salida"></pre>
         </div>
         <div class="form-div-content">
           <label>Phone Number:</label>
-          <input type="text" placeholder="1234567890" id="phone">
-          <p id="pNumberP" style="visibility: hidden;">Phone number error</p>
+          <input type="text" placeholder="1234567890" id="phone" />
+          <p id="pNumberP" style="visibility: hidden">Phone number error</p>
         </div>
         <div class="form-div-content">
           <label>Address:</label>
-          <input type="text" placeholder="Pellegrinni 1234" id="address">
-          <p id="addressP" style="visibility: hidden;">Address error</p>
+          <input type="text" placeholder="Pellegrinni 1234" id="address" />
+          <p id="addressP" style="visibility: hidden">Address error</p>
         </div>
         <div class="form-div-content">
           <label>Location:</label>
-          <input type="text" placeholder="Rosario" id="city">
-          <p id="cityP" style="visibility: hidden;">City error</p>
+          <input type="text" placeholder="Rosario" id="city" />
+          <p id="cityP" style="visibility: hidden">City error</p>
         </div>
         <div class="form-div-content">
           <label>Postal Code:</label>
-          <input type="text" placeholder="2000" id="pc">
-          <p id="pcP" style="visibility: hidden;">Postal code error</p>
+          <input type="text" placeholder="2000" id="pc" />
+          <p id="pcP" style="visibility: hidden">Postal code error</p>
         </div>
         <div class="form-div-content">
           <label>E-mail:</label>
-          <input type="text" placeholder="pedro_rodriguez@example" id="email">
-          <p id="emailP" style="visibility: hidden;">Email error</p>
+          <input type="text" placeholder="pedro_rodriguez@example" id="email" />
+          <p id="emailP" style="visibility: hidden">Email error</p>
         </div>
         <div class="form-div-content">
           <label>Password:</label>
-          <input type="password" name="myPassword" id="password">
-          <p id="passwordP" style="visibility: hidden;">Password error</p>
+          <input type="password" name="myPassword" id="password" />
+          <p id="passwordP" style="visibility: hidden">Password error</p>
         </div>
         <div class="form-div-content">
           <label>Repeat Password:</label>
-          <input type="password" name="myPassword" id="reCheckPassword">
-          <p id="rePasswordP" style="visibility: hidden;">Password error</p>
+          <input type="password" name="myPassword" id="reCheckPassword" />
+          <p id="rePasswordP" style="visibility: hidden">Password error</p>
         </div>
         <div id="buttons-div">
-          <input type="button" onclick="validationForm()" value="Create" class="button-send-message">
+          <input
+            type="button"
+            onclick="validationForm()"
+            value="Create"
+            class="button-send-message"
+          />
           <h5><a href="../views/login.html">Log in!</a></h5>
         </div>
       </form>
