@@ -2,7 +2,6 @@ window.onload = function () {
   var fName = document.getElementById("firstName");
   var lName = document.getElementById("lastName");
   var dni = document.getElementById("dni");
-  var dOfBirth = document.getElementById("dateOfBirth");
   var pNumber = document.getElementById("phone");
   var address = document.getElementById("address");
   var city = document.getElementById("city");
@@ -40,15 +39,6 @@ window.onload = function () {
   dni.addEventListener("focusout", function () {
     storage.setItem("dni", dni.value);
   });
-  dOfBirth.addEventListener("focusout", function () {
-    storage.setItem("dob", dOfBirth.value);
-  });
-  function toMonthDayYear(dateToConv) {
-    [year, month, day] = dateToConv.split("-");
-    var dateMDY = [month, day, year].join("/");
-    return dateMDY;
-  }
-  toMonthDayYear(dOfBirth.value);
 
   pNumber.addEventListener("focus", pNumberFocus, true);
   pNumber.addEventListener("blur", pNumberBlur, true);
@@ -119,7 +109,7 @@ window.onload = function () {
   }
 
   function dniBlur() {
-    if (isNaN(dni)) {
+    if (dni.length < 8 || isNaN(dni)) {
       document.getElementById("dni").style.backgroundColor = "pink";
       dniError.style.visibility = "visible";
       dniError.style.color = "red";
@@ -132,7 +122,7 @@ window.onload = function () {
   }
 
   function pNumberBlur() {
-    if (!/^\d{10}$/.test(pNumber.value) || isNaN(pNumber.value)) {
+    if (pNumber.length < 10 || isNaN(pNumber.value)) {
       document.getElementById("phone").style.backgroundColor = "pink";
       pNumberError.style.visibility = "visible";
       pNumberError.style.color = "red";
@@ -231,7 +221,6 @@ window.onload = function () {
     fName.value = storage.getItem("name");
     lName.value = storage.getItem("lastName");
     dni.value = storage.getItem("dni");
-    dOfBirth.value = storage.getItem("dob");
     pNumber.value = storage.getItem("phone");
     address.value = storage.getItem("address");
     city.value = storage.getItem("city");
@@ -275,8 +264,15 @@ function validationDateOfBirth() {
   var isoFormattedStr = `${year}/${month}/${day}`;
   var date = new Date(isoFormattedStr);
   var currentDate = new Date(Date.now());
-  console.log(dOfBirth);
   return currentDate >= date;
+}
+
+function toMonthDayYear(dateToConv) {
+  [year, month, day] = dateToConv.split("-");
+  var dateMDY = [month, day, year].join("/");
+  localStorage.setItem("dob", dateMDY);
+
+  return dateMDY;
 }
 
 function validationPhoneNumber() {
@@ -349,6 +345,7 @@ function passwordComparison() {
 }
 
 function validationForm() {
+  toMonthDayYear(document.getElementById("dateOfBirth").value)
   var url = new URL("https://basp-m2022-api-rest-server.herokuapp.com/signup");
   var params = {
     name: localStorage.getItem("name"),
@@ -412,41 +409,3 @@ function validationForm() {
     return true;
   }
 }
-// +
-//   "?name=" +
-//   firstName.value +
-//   "&lastName=" +
-//   lastName.value +
-//   "&dni=" +
-//   dni.value +
-//   "&dob=" +
-//   validationDateOfBirth(toMonthDayYear.value) +
-//   "&phone=" +
-//   phone.value +
-//   "&address=" +
-//   address.value +
-//   "&city=" +
-//   city.value +
-//   "&zip=" +
-//   postalCode.value +
-//   "&email=" +
-//   emailLog.value +
-//   "&password=" +
-//   password.value
-// function validateDate(dateToValidate){
-
-//   var [year, month, day] = dateToValidate.split("-");
-//   var isoFormattedStr = `${year}/${month}/${day}`;
-//   var date = new Date(isoFormattedStr);
-//   var currentDate = new Date(Date.now());
-
-//   return currentDate >= date
-// }
-// var currentDate = new Date(Date.now());
-// function toMonthDayYear(dateToConv){
-
-//   [year, month, day] = dateToConv.split('-');
-//   var dateMDY = [month, day, year].join('/')
-
-//   return dateMDY
-// }
